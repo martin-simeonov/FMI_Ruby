@@ -103,8 +103,8 @@ module DrunkenMathematician
     fibonacci_limit ||= 0
     sequence = RationalSequence.new(Float::INFINITY)
     sum = 0
-    sequence.take_while do |n|
-      sum += n
+    sequence.take_while do |number|
+      sum += number
       sum <= fibonacci_limit
     end
   end
