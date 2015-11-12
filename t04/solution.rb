@@ -89,8 +89,8 @@ class Deck
   end
 
   def to_s
-    string_deck = Array.new
-    @deck.each { |card| string_deck << card.to_s }
+    string_deck = String.new
+    @deck.each { |card| string_deck << card.to_s + "\n" }
     string_deck
   end
 
